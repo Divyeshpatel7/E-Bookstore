@@ -2,7 +2,6 @@ import { useMemo, useState } from "react"
 import {NavigationItems} from "../../utils/shared";
 import { Link, useNavigate } from "react-router-dom";
 import { RoutePaths } from "../../utils/enum";
-// import siteLogo from "../../assets/images/tatvasoftLogo.svg"
 import headerStyles from "./headerStyle.module.css";
 import { Button, Breadcrumbs, TextField, } from "@mui/material";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
@@ -67,7 +66,7 @@ export const Headers = () => {
             <div className={headerStyles.header}>
                 <div className={headerStyles.tatvasoftLogoClass}>
                     <Link to={RoutePaths.Home} >
-                        {/* <img src={siteLogo} width="180" alt="tatvasoft.svg"></img> */}
+                        <img src="/books_logo.png" width={180} height={70} alt="logo"></img>
                     </Link>
                 </div>
                 <div className={headerStyles.headerLinks}>

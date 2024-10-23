@@ -19,7 +19,7 @@ import bookListingStyles from "./BookListing.module.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faIndianRupeeSign } from "@fortawesome/free-solid-svg-icons"
 import { AddToCart } from "../../utils/shared";
-import cartService from "../../services/cart.service";
+// import cartService from "../../services/cart.service";
 import { useCartContext } from "../../context/cart.context"
 import { toast } from "react-toastify"
 export const BookListing = () => {
@@ -28,7 +28,7 @@ export const BookListing = () => {
     // const materialClasses = materialCommonStyles();
     const [bookResponse, setBookResponse] = useState({
         pageIndex: 0,
-        pageSize: 10, 
+        pageSize: 12, 
         totalPages: 1,
         items: [],
         totalItems: 0,
@@ -37,9 +37,6 @@ export const BookListing = () => {
     const [sortBy, setSortBy] = useState();
     const [filters, setFilters] = useState(defaultFilter);
 
-    useEffect(() => {
-        
-    });
     useEffect(() => {
         getAllCategories();
         const timer = setTimeout(() => {

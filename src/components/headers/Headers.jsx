@@ -66,7 +66,7 @@ export const Headers = () => {
             <div className={headerStyles.header}>
                 <div className={headerStyles.tatvasoftLogoClass}>
                     <Link to={RoutePaths.Home} >
-                        <img src="/books_logo.png" width={180} height={70} alt="logo"></img>
+                        <img src="/books_logo.png" width={180} height={71} alt="logo"></img>
                     </Link>
                 </div>
                 <div className={headerStyles.headerLinks}>
